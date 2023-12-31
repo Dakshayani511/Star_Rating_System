@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Page</title>
+    <link rel="stylesheet" href="rating-styles.css">
+</head>
+<body>
+    <div class="rating-container">
+        <h1>How was your experience..?</h1>
+        <div class="star-container" id="starContainer" onclick="submitRating()">
+            <span class="star" data-rating="1" onclick="selectRating(1)">&#9733;</span>
+            <span class="star" data-rating="2" onclick="selectRating(2)">&#9733;</span>
+            <span class="star" data-rating="3" onclick="selectRating(3)">&#9733;</span>
+            <span class="star" data-rating="4" onclick="selectRating(4)">&#9733;</span>
+            <span class="star" data-rating="5" onclick="selectRating(5)">&#9733;</span>
+        </div>
+        
+        <textarea id="descriptionBox" placeholder="Add a description..."></textarea>
+        <button onclick="submitRating()">Submit Rating</button>
+        <div id="thankYouMessage" style="display:none;">Thank you for your rating!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
